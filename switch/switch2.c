@@ -34,7 +34,7 @@ int main()
             break;
         }
     default:
-        printf("Operação invalida!");
+        printf("Operador inválido!");
     }
 
     return 0;
