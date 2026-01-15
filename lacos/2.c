@@ -4,13 +4,13 @@ int main () {
     int num,soma = 0;
 
     printf("Insira um numero: ");
-    scanf("%d",num);
+    scanf("%d",&num);
 
     for (int i = 1; i <= num; i++){
         soma += i;
     }
 
-    printf("Soma = %d",soma);
+    printf("SOMA = %d ",soma);
 
     return 0;
 }
