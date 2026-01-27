@@ -1,16 +1,30 @@
 #include <stdio.h>
 
-int main () {
-    int num,soma = 0;
+int main()
+{
+    int n, soma = 0;
 
     printf("Insira um numero: ");
-    scanf("%d",&num);
+    scanf("%d", &n);
 
-    for (int i = 1; i <= num; i++){
-        soma += i;
+    printf("CALCULO = ");
+
+    for (int i = 1; i <= n; i++)
+    {
+        if (i < n)
+        {
+            soma += i;
+            printf("%d + ", i);
+        }
+        else
+        {
+            soma += i;
+            printf("%d  ", i);
+        }
     }
+    printf("\n");
 
-    printf("SOMA = %d ",soma);
+    printf("A SOMA 1 ATE %d = %d ", n,soma);
 
     return 0;
 }

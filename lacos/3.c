@@ -2,19 +2,15 @@
 
 int main()
 {
-    int num;
+    int n;
 
-    printf("Insira um numero: ");
-    scanf("%d", &num);
+    printf("Insira um numero para tabuada: ");
+    scanf("%d", &n);
 
-    printf("Tabuada do numero %d\n",num);
-
-    for (int i = 1; i <= 10; i++)
+    for (int i = 0; i <= 10; i++)
     {
-        printf("%d X %d = %d \n", num, i, num * i);
+        printf("%d X %d = %d \n", n, i, n * i);
     }
-
-    printf("PROGRAMA ENCERRADO!");
 
     return 0;
 }
