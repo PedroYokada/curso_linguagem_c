@@ -15,7 +15,7 @@ int main()
     switch (opcao)
     {
     case 1:
-        printf("Preparando Hambúrguer...");
+        printf("Preparando Hamburguer...");
         break;
     case 2:
         printf("Preparando Cachorro-quente...");
@@ -27,7 +27,7 @@ int main()
         printf("Saindo...");
         break;
     default:
-        printf("Opção inválida...");
+        printf("Opção invalida...");
         break;
     }
 

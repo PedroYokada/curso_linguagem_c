@@ -3,16 +3,24 @@
 int main()
 {
 
-    int minutos, hora;
+    int minutos, hora, min_restantes;
 
-    printf("Insira a quantidade de minutos: ");
+    printf("Insira o tempo de minutos: ");
     scanf("%d", &minutos);
 
     hora = minutos / 60;
+    min_restantes = minutos % 60;
 
-    printf("-- Total horas e minutos -- \n");
-    printf("TOTAL HORAS = %d \n", hora);
-    printf("TOTAL MINUTOS = %d \n", minutos);
+    if (hora == 1)
+    {
+        printf("-- Total hora(s) e minutos -- \n");
+        printf("RESULTADO = %d hora e %d minutos.", hora, min_restantes);
+    }
+    else
+    {
+        printf("-- Total hora(s) e minutos -- \n");
+        printf("RESULTADO = %d horas e %d minutos.", hora, min_restantes);
+    }
 
     return 0;
 }

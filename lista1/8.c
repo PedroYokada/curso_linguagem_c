@@ -11,7 +11,7 @@ int main()
     {
         printf("Excelente temporada!");
     }
-    else if (gols >= 5 || (gols <= 10))
+    else if (gols >= 5)
     {
         printf("Boa temporada!");
     }

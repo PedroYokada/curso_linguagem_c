@@ -2,7 +2,7 @@
 
 int main () {
 
-    int vitorias,derrotas,empate,qntV,qntD,qntE,total;
+    int vitorias,derrotas,empate,pontos;
 
     printf("Insira o numero de vitórias: ");
     scanf("%d",&vitorias);
@@ -13,16 +13,13 @@ int main () {
     printf("Insira o numero de derrotas: ");
     scanf("%d",&derrotas);
 
-    qntV = vitorias * 3;
-    qntE = empate * 1;
-    qntD = 0;
-    total = qntD + qntE + qntV;
+    pontos = (vitorias * 3) + (empate * 1) + (derrotas * 0);
 
     printf("-- Quantidade de pontos -- \n");
-    printf("Vitória = %d \n",qntV);
-    printf("Empates = %d \n",qntE);
-    printf("Derrotas = %d \n",qntD);
-    printf("TOTAL PONTOS = %d \n",total);
+    printf("Vitória = %d \n",vitorias);
+    printf("Empates = %d \n",empate);
+    printf("Derrotas = %d \n",derrotas);
+    printf("TOTAL PONTOS = %d \n",pontos);
 
     return 0;
 }

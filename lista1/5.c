@@ -13,14 +13,7 @@ int main()
 
     diferenca = fabs(salario1 - salario2);
 
-    if (diferenca == 0.00)
-    {
-        printf("Salarios iguais");
-    }
-    else
-    {
-        printf("DIFERENCA = %.2f", diferenca);
-    }
+    printf("DIFERENCA = %.2f", diferenca);
 
     return 0;
 }

@@ -1,17 +1,17 @@
 #include <stdio.h>
 
 int main () {
-    int cartaoA;
+    int cartoes;
 
     printf("Cartoes amarelos recebidos: ");
-    scanf("%d",&cartaoA);
+    scanf("%d",&cartoes);
 
-    if (cartaoA >= 2) {
+    if (cartoes >= 2) {
         printf("Jogador expulso \n");
-        printf("QUANTIDADES CARTOES = %d",cartaoA);
+        printf("QUANTIDADES CARTOES = %d",cartoes);
     } else {
         printf("Permanece no jogo \n");
-        printf("QUANTIDADES CARTOES = %d",cartaoA);
+        printf("QUANTIDADES CARTOES = %d",cartoes);
     }
 
     return 0;

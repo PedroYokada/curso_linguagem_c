@@ -20,9 +20,9 @@ int main()
     {
         printf("Jogador experiente em grande fase!");
     }
-    else
+    else if (idade > 20 && qnt_gols <= 15)
     {
-        printf("Estevão");
+        printf("Estevão.");
     }
 
     return 0;

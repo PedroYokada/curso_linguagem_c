@@ -2,33 +2,34 @@
 
 int main()
 {
-    int capacidade, torcedores;
-    float ocupacao;
 
-    printf("Insira a %% da capacidade do estadio: ");
-    scanf("%d", &capacidade);
+    int cap, qnt;
+    float ocup;
+
+    printf("Insira a capacidade total do estadio: ");
+    scanf("%d", &cap);
 
     printf("Insira a quantidade de torcedores: ");
-    scanf("%d", &torcedores);
+    scanf("%d", &qnt);
 
-    ocupacao = (torcedores * 100) / capacidade;
+    ocup = (float)qnt / cap * 100;
 
-    if (ocupacao > 90)
+    printf("LOTACAO: %.2f%% \n", ocup);
+
+    if (ocup > 90)
     {
         printf("Lotado!");
     }
-    else if (ocupacao >= 70)
+    else if (ocup >= 70)
     {
         printf("Ótima presença de público!");
     }
-    else if (ocupacao >= 50)
+    else if (ocup >= 50)
     {
-        printf("Público razoável!");
+        printf("Público razoável.");
     }
     else
     {
-        printf("Morumbis!");
+        printf("Morumbis.");
     }
-
-    return 0;
 }
