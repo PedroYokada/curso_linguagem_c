@@ -24,7 +24,7 @@ int main()
     }
     printf("\n");
 
-    printf("A SOMA 1 ATE %d = %d ", n,soma);
+    printf("A SOMA 1 ATE %d = %d ", n, soma);
 
     return 0;
 }
